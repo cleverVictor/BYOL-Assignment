@@ -47,12 +47,4 @@ def test_string_and_comment():
 if __name__ == '__main__':
     test_basic()
     test_string_and_comment()
-    print('All lexer tests passed for Clever Victor Woyengidenyefa')
-    # also show tokens for demonstration
-    from lexer import Lexer
-    lex = Lexer('let s = "hi"')
-    while True:
-        t = lex.next_token()
-        print((t.type, t.literal))
-        if t.type == TokenType.EOF:
-            break
+    print('All lexer tests passed')
